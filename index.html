@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация и Регистрация by MrTreazzy</title>
+    <script src="app.js"></script>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&family=Work+Sans:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rampart+One&display=swap');
+    .tittle{
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    display:block;
+    text-decoration: none;
+}
+    .sul{
+    color: black;
+}
+    .sul:hover{
+    color:rgb(84, 8, 155)
+}
+    .nav{
+    list-style-type:none;
+    box-shadow: 0px 0px 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive; 
+}
+    .maima{
+    text-align: center;
+}
+    @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+    .top-menu {
+  position: relative; 
+  background: #fff;
+  box-shadow: inset 0 0 10px #ccc;
+  position: sticky;
+  top: 0;
+}
+    .top-menu:before,
+    .top-menu:after {
+  content: "";
+  display: block;
+  height: 5px;
+  border-top: 3px solid #294bb8;
+  border-bottom: 1px solid #294bb8;
+  margin-bottom: 2px;
+}
+    .top-menu:after {
+  border-bottom: 3px solid #294bb8;
+  border-top: 1px solid #294bb8;
+  box-shadow: 0 2px 7px #ccc;
+  margin-top: 2px;
+}
+    .menu-main {
+  list-style: none;
+  padding: 0 30px;
+  margin: 0;
+  font-size: 30px;
+  text-align: center;
+  position: relative;
+}
+    .menu-main:before {left: 15px;}
+    .menu-main:after {right: 15px;}
+    .menu-main li {
+  display: inline-block;
+  padding: 5px 0;
+}
+    .menu-main a {
+  text-decoration: none;
+  display: inline-block;
+  margin: 2px 5px;
+  padding: 6px 15px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  color: #777777;
+  border-bottom: 1px solid transparent;
+  transition: .3s linear;
+}
+    .ehead
+{
+	display: block;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	height:42px;
+	line-height: 47px;
+	font-size: 20px;
+	text-align: center;
+	background:#1A3763;
+	color:#fff;
+	position: relative;
+	margin-bottom: 20px;
+    max-width: 400px;
+	height: auto;
+    	min-height: 42px;
+    	box-sizing: border-box;
+    	padding: 10px 44px 10px 10px;
+}
+    body {
+        background-image: url(https://lh3.googleusercontent.com/proxy/0xJVjDtgNrO7XnVzh_KKcX6v3hBZKgGaOTY05jOsGiK-uZA00VvKjBKWO2eWqFm-LMDSkCTkZvS7agEaEL9zdvjrsN8MoPFVZsHevkP7Ag);
+    }
+    .enter
+{
+	display: block;
+	background: #D7D8DA;
+	color:#1A3763;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	font-weight: bold;
+	padding-bottom: 30px;
+    max-width: 400px;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+    input[type=text] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+    input[type=password] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+    input[type=email] {
+    padding:10px;
+    border:0;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+}
+    .button
+{
+	display: inline-block;	
+	font-size: 17px;
+	line-height: 20px;
+	min-width: 146px;
+	padding:6px 19px 6px;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	background:#1d3e70;
+	color:#fff;
+	font-family: 'PT Sans', serif;
+	border:none;
+	box-sizing:border-box;
+	border-radius:0px;
+	-webkit-appearance:none;
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body class="maima" data-new-gr-c-s-check-loaded="14.1040.0" data-gr-ext-installed="">
+    <br id="nav">
+    <nav class="top-menu">
+        <ul class="menu-main">
+            <li><a href="#nav" style="text-decoration:none;" class="sul"><b>Наверх</b></a></li>
+            <li><a href="#enter" style="text-decoration:none;" class="sul"><b>Войти</b></a></li>
+            <li><a href="#register" style="text-decoration:none;" class="sul"><b>Зарегистрироваться</b></a></li>
+            <li><a href="#otziv" style="text-decoration:none;" class="sul"><b>Отзывы</b></a></li>
+        </ul>
+      </nav>
+      <div class="enter" id="enter">
+        <div class="ehead">Вход в систему</div>
+        <label for="field_email">Email</label>
+        <br>
+        <input type="email" id="field_email" name="email">
+        <br>
+        <label for="field_password">Пароль</label>
+        <br>
+        <input type="password" id="field_password" name="password">
+        <br>
+        <input type="submit" class="button">
+    </div>
+    <br />
+    <div class="enter" id="register">
+        <div class="ehead">Регистрация в системе</div>
+        <label for="field_name">Имя</label>
+        <br>
+        <input type="text" id="field_email" name="email">
+        <br>
+        <label for="field_longname">Фамилия</label>
+        <br>
+        <input type="text" id="field_email" name="email">
+        <br>
+        <label for="field_otchestvo">Отчество</label>
+        <br>
+        <input type="text" id="field_email" name="email">
+        <br>
+        <label for="field_email">Email</label>
+        <br>
+        <input type="email" id="field_email" name="email">
+        <br>
+        <label for="field_password">Пароль</label>
+        <br>
+        <input type="password" id="field_password" name="password">
+        <br>
+        <input type="submit" class="button">
+    </div>
+    <div class="ka">
+        <h2 id="otziv">Помойка чужих мнений :)</h2>
+        <form class="" action="index.html">
+        <label for="name">name: </label>
+        <input type="text" class="otz" id="name" placeholder="name...">
+        <br> 
+        <label for="email">Email:</label>       
+        <input type="email" class="otz" id="email" placeholder="mail...">
+        <br>
+        <label for="text">Text: </label>
+        <textarea id="text" class="otz" placeholder="Your comment"></textarea>
+        <br>
+        <p>
+            <input type="radio" name="rating" value="exc">Хорошо)<br>
+            <input type="radio" name="rating" value="bad">Нехорошо(<br>
+        </p>
+        <input type="submit" value="Оценить">
+    </form>
+</div>
+</body>
+</html>
